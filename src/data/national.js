@@ -1,4 +1,4 @@
-window.NATIONAL_DATA = [
+export const NATIONAL_DATA = [
     {name: '가리산', address: '강원도 홍천군 두촌면ㆍ화촌면, 춘천시 북산면ㆍ동면', height: '1050', key: 'na0'},
     {name: '가리왕산', address: '강원도 정선군 북평면ㆍ정선읍 회동리, 평창군 진부면', height: '1561', key: 'na1'},
     {name: '가야산', address: '경상남도 합천군ㆍ거창군, 경상북도 성주군', height: '1432', key: 'na2'},

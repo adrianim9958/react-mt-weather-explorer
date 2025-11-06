@@ -1,4 +1,4 @@
-window.BLACKYAK_DATA = [
+export const BLACKYAK_DATA = [
     {name: '가리산(홍천)', address: '강원 홍천군 두촌면', height: '1051', key: 'bk0'},
     {name: '가리왕산', address: '강원 정선군 정선읍 회동리', height: '1561', key: 'bk1'},
     {name: '가야산(경상)', address: '경남 합천군 가야면', height: '1430', key: 'bk2'},
