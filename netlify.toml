@@ -1,0 +1,22 @@
+[build]
+command = "npm run build"
+publish = "dist"
+
+[dev]
+command = "npm run dev"   # ✅ 개발 모드에서 실행할 커맨드 명시 (vite)
+targetPort = 5173         # ✅ vite dev server 포트
+port = 8888               # Netlify Dev 접속 포트 (기본 8888)
+publish = "dist"          # SPA 라우팅엔 불필요하지만 넣어둬도 무해
+
+[functions]
+directory = "netlify/functions"  # (선택) 함수 위치 명시
+
+[[redirects]]
+from = "/api/*"
+to = "/.netlify/functions/:splat"
+status = 200
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
